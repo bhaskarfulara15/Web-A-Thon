@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NIRVAN '26 | Where Ideas Become Innovation</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header id="home">
+
+    <nav>
+
+      <a href="" class="logo">
+        <span class="logo-icon">N</span>
+        NIRVAN'26
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="register-btn" onclick="openRegisterModal()">
+        REGISTER NOW
+      </button>
+
+    </nav>
+
+
+    <section class="hero-section">
+
+      <div class="hero-content">
+
+        <h1>
+          <span>NIRVAN</span> '26
+        </h1>
+
+        <h2>Where Ideas Become Innovation</h2>
+
+        <p>
+          Two days of challenges, competitions, workshops and endless
+          opportunities to innovate, compete and connect with brilliant minds.
+        </p>
+
+
+        <div class="hero-info">
+
+          <div>
+            <span>📅</span>
+            12 - 13 OCTOBER 2026
+          </div>
+
+          <div>
+            <span>📍</span>
+            GEHU,&nbsp;HALDWANI CAMPUS
+          </div>
+
+        </div>
+
+        <div class="hero-buttons">
+
+          <a href="#events" class="explore-btn">
+            EXPLORE EVENTS →
+          </a>
+
+          <button onclick="openRegisterModal()" class="secondary-btn">
+            REGISTER NOW
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="countdown-wrapper">
+
+        <div class="countdown">
+
+          <p>FEST BEGINS IN</p>
+
+          <div class="timer">
+
+            <div>
+              <h3 id="days">00</h3>
+              <span>DAYS</span>
+            </div>
+
+            <div>
+              <h3 id="hours">00</h3>
+              <span>HRS</span>
+            </div>
+
+            <div>
+              <h3 id="minutes">00</h3>
+              <span>MINS</span>
+            </div>
+
+            <div>
+              <h3 id="seconds">00</h3>
+              <span>SECS</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </header>
+
+
+  <section id="about">
+
+    <div class="section-label">ABOUT NIRVAN</div>
+
+    <div class="about-container">
+
+      <div class="about-content">
+
+        <h2>What is NIRVAN?</h2>
+
+        <p>
+          NIRVAN is the annual technical fest of GEHU that brings together
+          developers, innovators, designers and technology enthusiasts for
+          two days of challenges, workshops and endless collaboration.
+        </p>
+
+
+        <div class="about-features">
+
+          <div class="feature">
+            <div class="feature-icon">⚙</div>
+            <h3>INNOVATE</h3>
+            <p>Showcase your ideas and innovative solutions.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">🏆</div>
+            <h3>COMPETE</h3>
+            <p>Compete with the best minds and win exciting prizes.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">👤</div>
+            <h3>LEARN</h3>
+            <p>Learn from experts and industry leaders.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">👥</div>
+            <h3>CONNECT</h3>
+            <p>Network, learn and grow with the tech community.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="highlights-video">
+
+        <div class="video-placeholder">
+          <img src="./src/techgeek.png" alt="techgeeklogo">
+
+        </div>
+
+        <div class="video-caption">
+          <strong>TECH GEEKS GEHU</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="events">
+
+    <div class="section-header">
+
+      <div>
+        <div class="section-label">EVENT ARENA</div>
+        <h2>Explore Exciting Events</h2>
+      </div>
+
+      <button
+        class="view-all-btn"
+        type="button"
+        onclick="toggleAllEvents()"
+      >
+        VIEW ALL EVENTS →
+      </button>
+
+    </div>
+
+
+    <div class="events-grid" id="eventsGrid">
+
+      <article class="event-card">
+
+        <div class="event-icon">🔒</div>
+
+        <h3>CTF</h3>
+
+        <p>
+          <img
+            src="./src/Ctf.png"
+            alt="CTF Event"
+            class="event-image"
+          >
+          Test your cybersecurity skills and capture the hidden flags.
+        </p>
+
+        <button type="button" onclick="showEventDetails('CTF')">
+          VIEW DETAILS →
+        </button>
+
+      </article>
+
+
+      <article class="event-card">
+
+        <div class="event-icon">⌨</div>
+
+        <h3>Hackathon</h3>
+
+        <p>
+          <img
+            src="./src/Hackathon.png"
+            alt="Hackathon Event"
+            class="event-image"
+          >
+          Build innovative solutions and compete against the best tech minds.
+        </p>
+
+        <button type="button" onclick="showEventDetails('Hackathon')">
+          VIEW DETAILS →
+        </button>
+
+      </article>
+
+
+
+      <article class="event-card">
+
+        <div class="event-icon">🗺</div>
+
+        <h3>Treasure Hunt</h3>
+
+        <p>
+          <img
+            src="./src/tresurehunt.png"
+            alt="Treasure Hunt Event"
+            class="event-image"
+          >
+          Solve clues, puzzles and challenges in an adventurous hunt.
+        </p>
+
+        <button type="button" onclick="showEventDetails('Treasure Hunt')">
+          VIEW DETAILS →
+        </button>
+
+      </article>
+
+      <article class="event-card">
+
+        <div class="event-icon">🎮</div>
+
+        <h3>E-Sports</h3>
+
+        <p>
+          <img
+            src="./src/Esport.png"
+            alt="E-Sports Event"
+            class="event-image"
+          >
+          Compete in thrilling gaming battles and show your skills.
+        </p>
+
+        <button type="button" onclick="showEventDetails('E-Sports')">
+          VIEW DETAILS →
+        </button>
+
+      </article>
+    </div>
+
+  </section>
+
+
+  <section id="schedule">
+
+    <div class="schedule-intro">
+
+      <div class="section-label">SCHEDULE</div>
+
+      <h2>Event Schedule</h2>
+
+      <div class="schedule-tabs">
+
+        <button type="button" class="active">
+          DAY 1
+        </button>
+
+        <button type="button">
+          DAY 2
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="schedule-timeline">
+
+      <div class="schedule-item">
+        <span class="time">09:00 AM</span>
+        <span class="activity">Opening Ceremony</span>
+        <span class="location">Main Auditorium</span>
+      </div>
+
+      <div class="schedule-item">
+        <span class="time">10:00 AM</span>
+        <span class="activity">Hackathon</span>
+        <span class="location">Lab 1</span>
+      </div>
+
+      <div class="schedule-item">
+        <span class="time">11:00 AM</span>
+        <span class="activity">Treasure Hunt</span>
+        <span class="location">Seminar Hall</span>
+      </div>
+
+      <div class="schedule-item">
+        <span class="time">01:00 PM</span>
+        <span class="activity">Lunch</span>
+        <span class="location">Food Court</span>
+      </div>
+
+      <div class="schedule-item">
+        <span class="time">02:00 PM</span>
+        <span class="activity">E-Sports</span>
+        <span class="location">Lab 2</span>
+      </div>
+
+      <div class="schedule-item">
+        <span class="time">04:00 PM</span>
+        <span class="activity">CTF</span>
+        <span class="location">Open Ground</span>
+      </div>
+
+    </div>
+
+
+    <div class="schedule-graphic">
+      📅
+    </div>
+
+  </section>
+
+
+  <section id="speakers">
+
+    <div class="section-header">
+
+      <div>
+        <div class="section-label">OUR SPEAKERS</div>
+        <h2>Meet Our Speakers</h2>
+      </div>
+
+      <button
+        class="view-all-btn"
+        type="button"
+        onclick="toggleAllSpeakers()"
+      >
+        VIEW ALL SPEAKERS →
+      </button>
+
+    </div>
+
+
+    <div class="speakers-container" id="speakersContainer">
+
+      <article class="speaker-card">
+
+        <div class="speaker-image">
+          <img src="images/speaker-1.jpg" alt="Dr. Ananya Sharma">
+        </div>
+
+        <div class="speaker-info">
+
+          <h3>Dr. AK V</h3>
+
+          <span>AI Researcher</span>
+          <span>Google</span>
+
+          <p>
+            An AI and Machine Learning expert with 10+ years of experience.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="speaker-card">
+
+        <div class="speaker-image">
+          <img src="images/speaker-2.jpg" alt="Mr. Rohan Verma">
+        </div>
+
+        <div class="speaker-info">
+
+          <h3>Mr. Rohan Verma</h3>
+
+          <span>Cybersecurity Lead</span>
+          <span>Microsoft</span>
+
+          <p>
+            Specializes in offensive security and cybersecurity research.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="speaker-card">
+
+        <div class="speaker-image">
+          <img src="images/speaker-3.jpg" alt="Ms. Priya Nair">
+        </div>
+
+        <div class="speaker-info">
+
+          <h3>Ms. Priya Nair</h3>
+
+          <span>Product Designer</span>
+          <span>Figma</span>
+
+          <p>
+            Passionate about design systems and creating exceptional UX.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <section id="sponsors">
+
+    <div class="section-label">OUR SPONSORS</div>
+
+    <h2>Our Amazing Sponsors</h2>
+
+
+    <div class="sponsor-group">
+
+      <h3>TITLE SPONSORS</h3>
+
+      <div class="sponsors-list">
+        <div class="sponsor">TechCorp</div>
+        <div class="sponsor">Zeopto</div>
+      </div>
+
+    </div>
+
+
+    <div class="sponsor-group">
+
+      <h3>GOLD SPONSORS</h3>
+
+      <div class="sponsors-list">
+        <div class="sponsor">DevLabs</div>
+        <div class="sponsor">CloudNova</div>
+        <div class="sponsor">.xyz</div>
+        <div class="sponsor">lovable.Ai</div>
+        <div class="sponsor">HackNest</div>
+      </div>
+
+    </div>
+
+
+    <div class="sponsor-group">
+
+      <h3>COMMUNITY PARTNERS</h3>
+
+      <div class="sponsors-list">
+        <div class="sponsor">GitHub Community</div>
+        <div class="sponsor">GDG</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="gallery">
+
+    <div class="section-header">
+
+      <div>
+        <div class="section-label">GALLERY</div>
+        <h2>Moments From Previous Editions</h2>
+      </div>
+
+      <button
+        class="view-all-btn"
+        type="button"
+        onclick="showAllEventGalleries()"
+      >
+        VIEW FULL GALLERY
+      </button>
+
+    </div>
+
+
+    <div class="event-gallery-grid" id="eventGalleryGrid">
+
+      <button
+        class="event-gallery-card"
+        type="button"
+        onclick="openEventGallery('hackathon')"
+      >
+
+        <img
+          src="./gallery/hackathon-cover.jpg"
+          alt="Hackathon Gallery"
+        >
+
+        <span>HACKATHON</span>
+
+      </button>
+
+
+      <button
+        class="event-gallery-card"
+        type="button"
+        onclick="openEventGallery('treasure')"
+      >
+
+        <img
+          src="./gallery/treasure-cover.jpg"
+          alt="Treasure Hunt Gallery"
+        >
+
+        <span>TREASURE HUNT</span>
+
+      </button>
+
+
+      <button
+        class="event-gallery-card"
+        type="button"
+        onclick="openEventGallery('esports')"
+      >
+
+        <img
+          src="./gallery/esports-cover.jpg"
+          alt="E-Sports Gallery"
+        >
+
+        <span>E-SPORTS</span>
+
+      </button>
+
+
+      <button
+        class="event-gallery-card"
+        type="button"
+        onclick="openEventGallery('ctf')"
+      >
+
+        <img
+          src="./gallery/ctf-cover.jpg"
+          alt="CTF Gallery"
+        >
+
+        <span>CTF</span>
+
+      </button>
+
+    </div>
+    <div id="eventGalleryModal" class="event-gallery-modal">
+
+      <div class="event-gallery-modal-content">
+
+        <div class="gallery-modal-header">
+
+          <div>
+            <div class="section-label">EVENT MEMORIES</div>
+            <h2 id="eventGalleryTitle">Event Gallery</h2>
+          </div>
+
+          <button
+            type="button"
+            class="close-modal"
+            onclick="closeEventGallery()"
+            aria-label="Close Gallery"
+          >
+            ×
+          </button>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="back-gallery-btn"
+          onclick="closeEventGallery()"
+        >
+          ← BACK TO EVENTS
+        </button>
+
+
+        <div
+          class="full-event-gallery-grid"
+          id="fullEventGallery"
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="imageViewer" class="image-viewer">
+
+      <button
+        type="button"
+        class="image-viewer-close"
+        onclick="closeImageViewer()"
+        aria-label="Close Image"
+      >
+        ×
+      </button>
+
+      <img
+        id="fullScreenImage"
+        src=""
+        alt="Gallery Full View"
+      >
+
+    </div>
+
+  </section>
+
+
+  <footer id="contact">
+
+    <div class="footer-container">
+
+
+      <div class="footer-brand">
+
+        <a href="#home" class="logo">
+          <span>N</span>
+          NIRVAN'26
+        </a>
+
+        <p>
+          Where ideas become innovation. Join us for two days of learning,
+          competing and shaping the future together.
+        </p>
+
+        <div class="footer-socials">
+          <a href="#" id="instagramLink">Instagram</a>
+          <a href="#" id="linkedinLink">LinkedIn</a>
+          <a href="#" id="youtubeLink">YouTube</a>
+        </div>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>QUICK LINKS</h4>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <h4>CONTACT US</h4>
+
+        <p>✉ nirvan@gehu.in</p>
+        <p>📞 +91 1256489632</p>
+        <p>📍 GEHU, Haldwani Campus</p>
+
+      </div>
+     </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>© 2026 NIRVAN. All rights reserved.</p>
+
+      <div>
+        <a href="#" id="privacyPolicy">Privacy Policy</a>
+        <span>|</span>
+        <a href="#" id="termsConditions">Terms & Conditions</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <div id="registerModal" class="registration-modal">
+
+    <div class="modal-content registration-content">
+
+      <button
+        type="button"
+        onclick="closeRegisterModal()"
+        class="close-modal"
+        aria-label="Close Registration"
+      >
+        ×
+      </button>
+
+
+      <h2>Register for NIRVAN '26</h2>
+
+      <p class="registration-note">
+        Select your event. Individual registrations are completed directly
+        on the website, while team events use the official Google Form.
+      </p>
+
+
+      <div class="registration-type-tabs">
+
+        <button
+          type="button"
+          class="registration-tab active"
+          id="soloTab"
+          onclick="showSoloRegistration()"
+        >
+          SOLO REGISTRATION
+        </button>
+
+        <button
+          type="button"
+          class="registration-tab"
+          id="teamTab"
+          onclick="showTeamRegistration()"
+        >
+          TEAM REGISTRATION
+        </button>
+
+      </div>
+
+
+      <div id="soloRegistrationSection">
+
+        <form id="registrationForm">
+
+          <input
+            id="soloName"
+            name="fullName"
+            type="text"
+            placeholder="Full Name"
+            required
+          >
+
+          <input
+            id="soloEmail"
+            name="email"
+            type="email"
+            placeholder="Email Address"
+            required
+          >
+
+          <input
+            id="soloCollege"
+            name="college"
+            type="text"
+            placeholder="College Name"
+            required
+          >
+
+          <input
+            id="soloPhone"
+            name="phone"
+            type="tel"
+            placeholder="Phone Number"
+            required
+          >
+
+
+          <select
+            id="soloEvent"
+            name="event"
+            required
+          >
+
+            <option value="">
+              Select Individual Event
+            </option>
+
+            <option value="CTF">
+              CTF
+            </option>
+
+            <option value="Workshop">
+              Workshop
+            </option>
+
+          </select>
+
+
+          <button
+            type="submit"
+            class="register-btn"
+          >
+            COMPLETE INDIVIDUAL REGISTRATION
+          </button>
+
+        </form>
+
+      </div>
+
+
+      <div
+        id="teamRegistrationSection"
+        style="display: none;"
+      >
+
+        <div class="team-registration-info">
+
+          <h3>Team Event Registration</h3>
+
+          <p>
+            Team registrations are handled through our official Google Form
+            so that all team member details can be collected properly.
+          </p>
+
+
+          <select
+            id="teamEvent"
+            name="teamEvent"
+          >
+
+            <option value="">
+              Select Team Event
+            </option>
+
+            <option value="Hackathon">
+              Hackathon
+            </option>
+
+            <option value="Treasure Hunt">
+              Treasure Hunt
+            </option>
+
+            <option value="E-Sports">
+              E-Sports
+            </option>
+
+          </select>
+
+
+          <a
+            id="googleFormRegistration"
+            href="YOUR_GOOGLE_FORM_LINK_HERE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="register-btn google-form-btn"
+          >
+            REGISTER TEAM VIA GOOGLE FORM →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+
+  <div id="eventDetailsModal" class="event-details-modal">
+
+    <div class="event-details-content">
+
+      <button
+        type="button"
+        class="close-modal"
+        onclick="closeEventDetails()"
+        aria-label="Close Event Details"
+      >
+        ×
+      </button>
+
+
+      <div class="section-label">
+        EVENT DETAILS
+      </div>
+
+      <h2 id="eventDetailsTitle">
+        Event Name
+      </h2>
+
+      <p id="eventDetailsDescription">
+      </p>
+
+
+      <div class="event-details-actions">
+
+        <button
+          type="button"
+          class="register-btn"
+          id="eventRegisterButton"
+        >
+          REGISTER FOR EVENT
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
