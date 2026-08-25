@@ -24,11 +24,12 @@ A modern, futuristic and responsive website for **NIRVAN '26**, designed with a 
   <li> style.css </li>
   <li> script.js </li>
   <li>gallery
-  <ul>ctf </li>
-  <ul>esports </li>
-  <ul>hackathon </li> 
-  <ul>speaker </li>
-  <ul>treasure </li>
-  </ul></li> 
+  <ul>
+  <li>ctf </li>
+  <li>esports</li>
+  <li>hackathon </li> 
+  <li>speaker </li>
+  <li>treasure </li>
+  </ul>
   </ol>
    
