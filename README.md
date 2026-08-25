@@ -23,10 +23,7 @@ A modern, futuristic and responsive website for **NIRVAN '26**, designed with a 
   <li> index.html </li>
   <li> style.css </li>
   <li> script.js </li>
-  <li><ul>
-    <li>images</li>
-    <li>hero</li>
-    <li>events</li>
-    <li>gallery</li>
-  </ul></li>
-</ol>
+  <li>gallery<li>
+    
+  </ol>
+   
